@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>petbusket</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="bd-color-ffe9cb">
+        <nav>
+            <div class="logo">
+                <a href="#">PetBusket</a>
+            </div>
+            <div class="menu">
+                <ul id="menuList">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-icon" onclick="togglemenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="row odd bd-color-ffe9cb">
+            <div class="col-t">
+                <h2>Get your favourite pet at your doorstep</h2>
+                <button type="button">Order Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="col-i">
+                <img src="pets.png" alt="img" />
+            </div>
+        </section>
+
+        <section class="row-sep">
+            <h2>Why PetBusket?</h2>
+            <div class="cols">
+                <div class="col-1">
+                    <i class="fa-solid fa-kit-medical"></i>
+                    <p>Free Health Cheackup</p>
+                </div>
+                <div class="col-2">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <p>100% Pure Breed</p>
+                </div>
+                <div class="col-3">
+                    <i class="fa-regular fa-face-smile-beam"></i>
+                    <p>Reasonable Price</p>
+                </div>
+                <div class="col-4">
+                    <i class="fa-solid fa-truck"></i>
+                    <p>Safe Delivery</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="row even bd-color-fffaf3">
+            <div class="col-i m">
+                <img class="imgwidth" src="dogs.png" alt="">
+            </div>
+            <div class="col-t m">
+                <h3>Adorable Puppies for Sale!</h3>
+                <p>Attention all dog lovers! We have a new litter of the cutest, most playful puppies you'll ever meet!
+                    These little guys
+                    and girls are looking for loving homes, and we know you'll fall in love with them as soon as you
+                    meet them.</p>
+                <button type="button">Visit for more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section class="row odd">
+            <div class="col-t m">
+                <h3>Beautiful Cats for Sale - Find Your New Feline Friend Today!</h3>
+                <p>Are you looking for a new furry friend to add to your family? Look no further than our collection of
+                    beautiful cats for
+                    sale! We have a wide range of breeds and ages to choose from, each one with its own unique
+                    personality and charm.</p>
+                <button type="button">Visit for more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="col-i m">
+                <img src="cats.png" alt="">
+            </div>
+        </section>
+
+        <section class="row even bd-color-fffaf3">
+            <div class="col-i m">
+                <img class="imgwidth" src="birds.png" alt="">
+            </div>
+            <div class="col-t m">
+                <h3>Elevate Your Life with a Feathered Companion - Birds for Sale!</h3>
+                <p>Looking to add some excitement and joy to your life? Look no further than our collection of beautiful
+                    birds for sale!
+                    Not only are birds entertaining and intelligent, but they also have a way of brightening up any room
+                    and bringing a
+                    sense of nature indoors.
+                </p>
+                <button type="button">Visit for more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section class="row odd">
+            <div class="col-t m">
+                <h3>Keep Your Furry Friends Happy and Healthy with Our Premium Pet Food</h3>
+                <p>At PetBusket, we believe that your pets deserve the best. That's why we offer a range of high-quality
+                    pet food
+                    options that are sure to keep your furry friends healthy, happy, and satisfied.
+                </p>
+                <button type="button">Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="col-i m">
+                <img class="imgwidth imgHeight" src="foods.png" alt="">
+            </div>
+        </section>
+
+        <section class="explore">
+            <button type="button">Explore more</button>
+        </section>
+        <section class="row-end">
+            <div>
+                <h2>1204</h2>
+                <p>Pets Delivered</p>
+            </div>
+            <div>
+                <h2>91%</h2>
+                <p>Positive Feedback</p>
+            </div>
+            <div>
+                <h2>54</h2>
+                <p>Cities</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <p>&copy; 2023 PetBusket</p>
+            <div class="social">
+
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>
